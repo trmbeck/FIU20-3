@@ -34,7 +34,7 @@ namespace WPF_Desktop_App
         private void klicki(object s, RoutedEventArgs args)
         {
             Debug.WriteLine("Button clicked!!!");
-            lbl.Content = "weitere änderung";
+            lbl.Content = "x-te änderung";
         }
     }
 }
