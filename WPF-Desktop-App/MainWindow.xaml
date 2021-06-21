@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_Desktop_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Desktop_App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Name="lbl" Content="Hauptfenster" Canvas.Left="219" Canvas.Top="145" Height="95" Width="284" FontSize="36"/>
+        <Button Click="klicki" 
+                Name="myBtn" 
+                Content="Button" 
+                HorizontalAlignment="Left" 
+                Margin="638,217,0,0" 
+                VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="288,341,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
