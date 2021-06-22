@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFfromScratch", "WPFfromScratch\WPFfromScratch.csproj", "{E2BDD997-38B5-4966-8A57-0910FF5AB0D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Desktop-App", "WPF-Desktop-App\WPF-Desktop-App.csproj", "{0E116495-7F9A-4C6D-B57F-C19386ECD7D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-Desktop-App", "WPF-Desktop-App\WPF-Desktop-App.csproj", "{0E116495-7F9A-4C6D-B57F-C19386ECD7D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormPartielleKlassen", "WinFormPartielleKlassen\WinFormPartielleKlassen.csproj", "{6F62F7C9-9949-4D9D-B3E2-50957A7FD779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Container", "DesignerProjekte\WPF-Container.csproj", "{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6F62F7C9-9949-4D9D-B3E2-50957A7FD779}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F62F7C9-9949-4D9D-B3E2-50957A7FD779}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F62F7C9-9949-4D9D-B3E2-50957A7FD779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
