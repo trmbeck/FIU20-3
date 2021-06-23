@@ -38,6 +38,7 @@ namespace DesignerProjekte
         private void startUniGridContainerWindow_Click(object sender, RoutedEventArgs e)
         {
             UniformGridFenster ufgFenster = new UniformGridFenster();
+            ufgFenster.TeilenDurchNull += (int zaehler) => { string message = String.Format("Event Teilen durch Null wurde geraist!! {0}/0 nicht erlaubt!", zaehler); MessageBox.Show(message); };
             ufgFenster.Show();
         }
 
@@ -51,5 +52,16 @@ namespace DesignerProjekte
 
         }
 
+        private void WrapPanelContainer_Click(object sender, RoutedEventArgs e)
+        {
+            WrapPanelFenster wpFenster = new WrapPanelFenster();
+            wpFenster.Show();
+        }
+
+        private void CanvasContainer_Click(object sender, RoutedEventArgs e)
+        {
+            CanvasFenster cFenster = new CanvasFenster();
+            cFenster.Show();
+        }
     }
 }

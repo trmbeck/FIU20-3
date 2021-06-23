@@ -11,27 +11,29 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="4*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" 
+        <TextBox x:Name="txb" Grid.Row="0" 
                  FlowDirection="RightToLeft" 
                  FontSize="30" 
-                 VerticalAlignment="Center"></TextBox>
+                 VerticalAlignment="Center"
+                 KeyUp="txb_KeyUp"
+                 KeyDown="txb_keyDown"></TextBox>
         <UniformGrid Columns="4" Rows="4" Grid.Row="1">
-            <Button FontSize="30" Content="7"></Button>
-            <Button FontSize="30" Content="8"></Button>
-            <Button FontSize="30" Content="9"></Button>
-            <Button FontSize="30" Content="x"></Button>
-            <Button FontSize="30" Content="4"></Button>
-            <Button FontSize="30" Content="5"></Button>
-            <Button FontSize="30" Content="6"></Button>
-            <Button FontSize="30" Content="/"></Button>
-            <Button FontSize="30" Content="1"></Button>
-            <Button FontSize="30" Content="2"></Button>
-            <Button FontSize="30" Content="3"></Button>
-            <Button FontSize="30" Content="-"></Button>
+            <Button FontSize="30" Content="7" Click="Button_Click"></Button>
+            <Button FontSize="30" Content="8" Click="Button_Click"></Button>
+            <Button FontSize="30" Content="9" Click="Button_Click"></Button>
+            <ToggleButton Name="malBtn" FontSize="30" Content="x" Click="Operator_Click"></ToggleButton>
+            <Button FontSize="30" Content="4" Click="Button_Click"></Button>
+            <Button FontSize="30" Content="5" Click="Button_Click"></Button>
+            <Button FontSize="30" Content="6" Click="Button_Click"></Button>
+            <ToggleButton Name="geteiltBtn" FontSize="30" Content="/" Click="Operator_Click"></ToggleButton>
+            <Button FontSize="30" Content="1" Click="Button_Click"></Button>
+            <Button FontSize="30" Content="2" Click="Button_Click"></Button>
+            <Button FontSize="30" Content="3" Click="Button_Click"></Button>
+            <ToggleButton Name="minusBtn" FontSize="30" Content="-" Click="Operator_Click"></ToggleButton>
             <Button FontSize="30" Content="C"></Button>
-            <Button FontSize="30" Content="0"></Button>
-            <Button FontSize="30" Content="="></Button>
-            <Button FontSize="30" Content="+"></Button>
+            <Button FontSize="30" Content="0" Click="Button_Click"></Button>
+            <Button FontSize="30" Content="=" Click="IstGleich_Click"></Button>
+            <ToggleButton Name="plusBtn" FontSize="30" Content="+" Click="Operator_Click"></ToggleButton>
         </UniformGrid>
     </Grid>
 </Window>

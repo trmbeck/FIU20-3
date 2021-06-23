@@ -23,5 +23,7 @@
         </StackPanel>
         <Button Name="startGridContainerWindow" Content="Grid Container" Click="startGridContainerWindow_Click"/>
         <Button Name="startUniformGridContainerWindow" Content="Uniformgrid Container" Click="startUniGridContainerWindow_Click"></Button>
+        <Button Name="WrapPanelContainer" Content="WrapPanel" Click="WrapPanelContainer_Click"></Button>
+        <Button Name="CanvasContainer" Content="Canvas" Click="CanvasContainer_Click"></Button>
     </StackPanel>
 </Window>

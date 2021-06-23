@@ -55,9 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CanvasFenster.xaml.cs">
+      <DependentUpon>CanvasFenster.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UniformGridFenster.xaml.cs">
       <DependentUpon>UniformGridFenster.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WrapPanelFenster.xaml.cs">
+      <DependentUpon>WrapPanelFenster.xaml</DependentUpon>
+    </Compile>
+    <Page Include="CanvasFenster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GridContainer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +88,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UniformGridFenster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WrapPanelFenster.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
