@@ -1,0 +1,115 @@
+﻿<Window x:Class="DesignerProjekte.DockPanelFenster"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesignerProjekte"
+        mc:Ignorable="d"
+        Title="DockPanelFenster" Height="450" Width="800">
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top" Height="23">
+            <MenuItem Header="Datei">
+                <MenuItem Header="Neu" Click="MenuNeu_Click">
+                    
+                </MenuItem>
+                <MenuItem Header="Öffnen ...">
+
+                </MenuItem>
+                <MenuItem Header="Schließen">
+
+                </MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Beenden">
+
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Bearbeiten">
+                <MenuItem Header="Kopieren"></MenuItem>
+                <MenuItem Header="Ausschneiden"></MenuItem>
+                <MenuItem Header="Einfügen"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem HorizontalAlignment="Left">
+                <Label Content="Anzahl Buchstaben: "></Label>
+            </StatusBarItem>
+            <Separator></Separator>
+            <StatusBarItem HorizontalAlignment="Center">
+                <TextBox Width="100"></TextBox>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <Button Content="suchen"></Button>
+            </StatusBarItem>
+        </StatusBar>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button MinWidth="23" Click="MenuNeu_Click" >
+                    <Image Source="/Bilder/NewImg.PNG" />
+                </Button>
+                <Button MinWidth="23">
+                    <Image Source="/Bilder/OpenImg.png"></Image>
+                </Button>
+                <Button Content="Zurück"  MinWidth="23"></Button>
+                <Button Content="Vor"  MinWidth="23"></Button>
+                <ComboBox Width="100">
+                    <ComboBoxItem IsSelected="True">C#</ComboBoxItem>
+                    <ComboBoxItem>Java</ComboBoxItem>
+                    <ComboBoxItem>JavaScript</ComboBoxItem>
+                </ComboBox>
+            </ToolBar>
+            <ToolBar>
+                <Button MinWidth="23" >
+                    <Image Source="/Bilder/NewImg.PNG" />
+                </Button>
+                <Button MinWidth="23">
+                    <Image Source="/Bilder/OpenImg.png"></Image>
+                </Button>
+                <Button Content="Zurück"  MinWidth="23"></Button>
+                <Button Content="Vor"  MinWidth="23"></Button>
+            </ToolBar>
+            <ToolBar>
+                <Button MinWidth="23" >
+                    <Image Source="/Bilder/NewImg.PNG" />
+                </Button>
+                <Button MinWidth="23">
+                    <Image Source="/Bilder/OpenImg.png"></Image>
+                </Button>
+                <Button Content="Zurück"  MinWidth="23"></Button>
+                <Button Content="Vor"  MinWidth="23"></Button>
+            </ToolBar>
+        </ToolBarTray>
+        <ToolBarTray DockPanel.Dock="Left" Orientation="Vertical">
+            <ToolBar>
+                <Button MinWidth="23" >
+                    <Image Source="/Bilder/NewImg.PNG" />
+                </Button>
+                <Button MinWidth="23">
+                    <Image Source="/Bilder/OpenImg.png"></Image>
+                </Button>
+                <Button Content="Zurück"  MinWidth="23"></Button>
+                <Button Content="Vor"  MinWidth="23"></Button>
+            </ToolBar>
+            <ToolBar>
+                <Button MinWidth="23" >
+                    <Image Source="/Bilder/NewImg.PNG" />
+                </Button>
+                <Button MinWidth="23">
+                    <Image Source="/Bilder/OpenImg.png"></Image>
+                </Button>
+                <Button Content="Zurück"  MinWidth="23"></Button>
+                <Button Content="Vor"  MinWidth="23"></Button>
+            </ToolBar>
+            <ToolBar>
+                <Button MinWidth="23" >
+                    <Image Source="/Bilder/NewImg.PNG" />
+                </Button>
+                <Button MinWidth="23">
+                    <Image Source="/Bilder/OpenImg.png"></Image>
+                </Button>
+                <Button Content="Zurück"  MinWidth="23"></Button>
+                <Button Content="Vor"  MinWidth="23"></Button>
+            </ToolBar>
+        </ToolBarTray>
+        <TextBox Name="editorInhalt" AcceptsReturn="True"></TextBox>
+    </DockPanel>
+</Window>

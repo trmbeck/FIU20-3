@@ -63,5 +63,11 @@ namespace DesignerProjekte
             CanvasFenster cFenster = new CanvasFenster();
             cFenster.Show();
         }
+
+        private void DockPanelContainer_Click(object sender, RoutedEventArgs e)
+        {
+            DockPanelFenster dpFenster = new DockPanelFenster();
+            dpFenster.Show();
+        }
     }
 }

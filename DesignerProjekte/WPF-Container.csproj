@@ -58,6 +58,9 @@
     <Compile Include="CanvasFenster.xaml.cs">
       <DependentUpon>CanvasFenster.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DockPanelFenster.xaml.cs">
+      <DependentUpon>DockPanelFenster.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UniformGridFenster.xaml.cs">
       <DependentUpon>UniformGridFenster.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,10 @@
       <DependentUpon>WrapPanelFenster.xaml</DependentUpon>
     </Compile>
     <Page Include="CanvasFenster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DockPanelFenster.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,6 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bilder\NewImg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bilder\OpenImg.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
