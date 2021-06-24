@@ -10,10 +10,14 @@
         <Menu DockPanel.Dock="Top" Height="23">
             <MenuItem Header="Datei">
                 <MenuItem Header="Neu" Click="MenuNeu_Click">
-                    
+                    <MenuItem.Icon>
+                        <Image Source="Bilder/newImg.png"></Image>
+                    </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem Header="Öffnen ...">
-
+                    <MenuItem.Icon>
+                        <Image Source="Bilder/OpenImg.png"></Image>
+                    </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem Header="Schließen">
 
@@ -24,9 +28,17 @@
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Bearbeiten">
-                <MenuItem Header="Kopieren"></MenuItem>
-                <MenuItem Header="Ausschneiden"></MenuItem>
-                <MenuItem Header="Einfügen"></MenuItem>
+                <MenuItem Header="Kopieren" InputGestureText="Strg+C">
+                    
+                </MenuItem>
+                <MenuItem Header="Ausschneiden"  InputGestureText="Strg+X"></MenuItem>
+                <MenuItem Header="Einfügen"  InputGestureText="Strg+V"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Hilfe">
+                <MenuItem Header="Webseite"></MenuItem>
+                <MenuItem Header="Über..."></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Geld zurück ..." IsEnabled="False"></MenuItem>
             </MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
@@ -110,6 +122,36 @@
                 <Button Content="Vor"  MinWidth="23"></Button>
             </ToolBar>
         </ToolBarTray>
-        <TextBox Name="editorInhalt" AcceptsReturn="True"></TextBox>
+        <!--<TextBox Name="editorInhalt" AcceptsReturn="True"></TextBox>-->
+        <UniformGrid Columns="2" Rows="2">
+            <Viewbox Name="myViewbox1" Stretch="None">
+                <Image Source="Bilder\auto.png"></Image>
+                <!--<Button Content="Hallo Welt"></Button>-->
+            </Viewbox>
+            <Viewbox Name="myViewbox2" Stretch="Fill">
+                <!--<Button Content="Hallo C#"></Button>-->
+                <Image Source="Bilder\auto.png"></Image>
+            </Viewbox>
+            <Viewbox Name="myViewbox3" Stretch="Uniform">
+                <!--<Button Content="Hallo FIU"></Button>-->
+                <Image Source="Bilder\auto.png"></Image>
+            </Viewbox>
+            <Viewbox Name="myViewbox4" Stretch="UniformToFill">
+                <!--<Button Content="Hallo WPF"></Button>-->
+                <Image Source="Bilder\auto.png">
+                    <Image.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="Stretch-Methode">
+                                <MenuItem Header="None"></MenuItem>
+                                <MenuItem Header="Fill"></MenuItem>
+                                <MenuItem Header="Uniform"></MenuItem>
+                                <MenuItem Header="UniformToFill"></MenuItem>
+                            </MenuItem>
+                            <MenuItem Header="ausblenden" IsCheckable="True" IsChecked="False"></MenuItem>
+                        </ContextMenu>
+                    </Image.ContextMenu>
+                </Image>
+            </Viewbox>
+        </UniformGrid>
     </DockPanel>
 </Window>

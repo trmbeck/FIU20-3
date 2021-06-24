@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF_Steuerelemente.ModalerDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Steuerelemente"
+        mc:Ignorable="d"
+        Title="ModalerDialog" Height="88.636" Width="390.909">
+    <StackPanel>
+        <Label Content="Wollen Sie den Text ändern?"></Label>
+        <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button Content="Ok" Width="75" Name="btn_OK" Click="btn_OK_Click" IsDefault="True"></Button>
+            <Button Content="Abbrechen" Width="75" Margin="10,0,0,0" IsCancel="True"></Button>
+        </StackPanel>
+    </StackPanel>
+</Window>

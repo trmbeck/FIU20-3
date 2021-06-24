@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormPartielleKlassen", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Container", "DesignerProjekte\WPF-Container.csproj", "{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Steuerelemente", "WPF-Steuerelemente\WPF-Steuerelemente.csproj", "{F717FA4E-66FA-44E9-97C2-7FF0CEA4D8B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C193CF29-6D7A-4A40-9EEB-6DC67D14F0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F717FA4E-66FA-44E9-97C2-7FF0CEA4D8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F717FA4E-66FA-44E9-97C2-7FF0CEA4D8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F717FA4E-66FA-44E9-97C2-7FF0CEA4D8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F717FA4E-66FA-44E9-97C2-7FF0CEA4D8B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,21 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace DesignerProjekte
+namespace WPF_Steuerelemente
 {
     /// <summary>
-    /// Interaktionslogik für DockPanelFenster.xaml
+    /// Interaktionslogik für ModalerDialog.xaml
     /// </summary>
-    public partial class DockPanelFenster : Window
+    public partial class ModalerDialog : Window
     {
-        public DockPanelFenster()
+        public ModalerDialog()
         {
             InitializeComponent();
         }
 
-        private void MenuNeu_Click(object sender, RoutedEventArgs e)
+        private void btn_OK_Click(object sender, RoutedEventArgs e)
         {
-            //editorInhalt.Text = "";
+            this.DialogResult = true;
+            this.Close();
         }
     }
 }

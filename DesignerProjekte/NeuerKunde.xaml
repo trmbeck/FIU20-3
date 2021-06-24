@@ -26,5 +26,6 @@
         <Button Name="WrapPanelContainer" Content="WrapPanel" Click="WrapPanelContainer_Click"></Button>
         <Button Name="CanvasContainer" Content="Canvas" Click="CanvasContainer_Click"></Button>
         <Button Name="DockPanelContainer" Content="DockPanel" Click="DockPanelContainer_Click"></Button>
+        <DatePicker></DatePicker>
     </StackPanel>
 </Window>

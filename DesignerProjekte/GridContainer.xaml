@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesignerProjekte"
         mc:Ignorable="d"
-        Title="GridContainer" Height="450" Width="800">
+        Title="GridContainer" Height="450" Width="454">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" MinHeight="23"></RowDefinition>
@@ -22,8 +22,9 @@
         <TextBox Grid.Row="1" Grid.Column="1" AcceptsReturn="True" 
                  VerticalScrollBarVisibility="Auto" 
                  HorizontalScrollBarVisibility="Visible"/>
-        <Button Name="myBtn" Content="Close" Grid.Row="2" Grid.Column="1" 
+        <Button Name="myBtn" Content="Close" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
                 Click="myBtn_Click"></Button>
+        <GridSplitter Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Right" Width="2"></GridSplitter>
     </Grid>
         
 </Window>

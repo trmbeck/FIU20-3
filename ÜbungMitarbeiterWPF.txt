@@ -1,0 +1,32 @@
+Mitarbeiter
+------------
+
++ ID : int {Readonly}
++ Geschlecht: Gender --> Enum {m, f, x} ==> RadioButtons
++ Name : string
++ Anschrift :  Address
++ Abteilung : Department --> Enum  {HR, Sales, Prod, ...} ==> ComboBox
++ Gehalt : decimal
++ Geburtsdatum : DateTime --> DatePicker
++ IT-Skills: string[] --> Office, Netzwerk, Dev, DevOps, DB, ...
++ Anmerkung : string --> Richttextbox/Textbox
+
+
+Adresse
+----------
++ Strasse : string
++ Nr : string
++ PLZ : int
++ Ort : string
+
+
+Hauptprogramm:
+--------------
+DockPanel
+Detailfenster: Listbox mit der Mitarbeiterliste (Feld MA-liste)
+MA auswählen und Details anzeigen
+MA löschen
+MA hinzufügen
+MA ändern
+MA-Liste speichern --> Serialisierung (XML, CSV oder binär)
+MA-Liste laden
