@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,7 @@ namespace WPF_Datenbindung
         //private Mitarbeiter ma1 { get; set; }
         //private int zeiger = 0;
         
-        private List<Mitarbeiter> mitarbeiterListe;
+        private ObservableCollection<Mitarbeiter> mitarbeiterListe;
         
         ICollectionView view;
 
@@ -32,14 +33,15 @@ namespace WPF_Datenbindung
         {
             //ma1 = new Mitarbeiter { Name = "Peter", Ort = "Musterstadt", PLZ = "12345", Strasse = "Musterweg 1" };
 
-            mitarbeiterListe = new List<Mitarbeiter>();
+            mitarbeiterListe = new ObservableCollection<Mitarbeiter>();
+            InitializeComponent();
             mitarbeiterListe.Add(new Mitarbeiter { Name = "Susi", Ort = "Musterdorf", PLZ = "67890", Strasse = "Musterstrasse 1", Alter=25 });
             mitarbeiterListe.Add(new Mitarbeiter { Name = "Peter", Ort = "Musterstadt", PLZ = "12345", Strasse = "Musterweg 1",Alter = 45 });
             mitarbeiterListe.Add(new Mitarbeiter { Name = "Hans", Ort = "Musterhausen", PLZ = "67550", Strasse = "Musterallee 1",Alter=65 });
 
-            InitializeComponent();
             view = CollectionViewSource.GetDefaultView(mitarbeiterListe);
             stackPanel1.DataContext = mitarbeiterListe;
+            //listbox1.ItemsSource = mitarbeiterListe;
             //txb_Name.Text = ma1.Name;
             //txb_Strasse.Text = ma1.Strasse;
             //txb_PLZ.Text = ma1.PLZ;
@@ -48,6 +50,7 @@ namespace WPF_Datenbindung
 
         private void btn_Anzeiger_Click(object sender, RoutedEventArgs e)
         {
+            mitarbeiterListe[view.CurrentPosition].Name = "abgeänderter Name im C# Code";
             MessageBox.Show(mitarbeiterListe[view.CurrentPosition].ToString());
         }
 
@@ -80,6 +83,11 @@ namespace WPF_Datenbindung
             mitarbeiterListe.Add(new Mitarbeiter());
             view.MoveCurrentToLast();
             txb_Name.IsEnabled = true;
+        }
+
+        private void btn_Alter_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Alter: " + listbox1.SelectedValue);
         }
     }
 }

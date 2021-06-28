@@ -1,14 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WPF_Datenbindung
 {
-    class Mitarbeiter
+    class Mitarbeiter : INotifyPropertyChanged
     {
-        public string Name { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set
+            {
+                name = value;
+                if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs("Name"));
+            }
+        }
         public string Strasse { get; set; }
         public string PLZ { get; set; }
         public string Ort { get; set; }
