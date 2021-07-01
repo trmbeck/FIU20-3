@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Datenbindung", "WPF-Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO-Net-Einführung", "ADO-Net-Einführung\ADO-Net-Einführung.csproj", "{67DF68E9-CFB8-48AD-9358-27965AF044A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Datenbindung-DataSet", "WPF-Datenbindung-DataSet\WPF-Datenbindung-DataSet.csproj", "{B1AE75B9-C160-4519-BBAC-2C5EE6A3E832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{67DF68E9-CFB8-48AD-9358-27965AF044A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DF68E9-CFB8-48AD-9358-27965AF044A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DF68E9-CFB8-48AD-9358-27965AF044A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AE75B9-C160-4519-BBAC-2C5EE6A3E832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AE75B9-C160-4519-BBAC-2C5EE6A3E832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AE75B9-C160-4519-BBAC-2C5EE6A3E832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AE75B9-C160-4519-BBAC-2C5EE6A3E832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

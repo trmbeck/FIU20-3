@@ -18,6 +18,6 @@
         <Label Content="Ausgabe:"></Label>
         <TextBox IsEnabled="False" Grid.Column="1" AcceptsReturn="True" Name="output" FontFamily="Consolas"></TextBox>
         <Button Name="btnAbfrage" Content="Abfrage" Grid.Row="2" Click="btnAbfrage_Click"/>
-        <TextBox Name="query" Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Name="txbQuery" Grid.Row="1" Grid.Column="1"></TextBox>
     </Grid>
 </Window>

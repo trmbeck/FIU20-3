@@ -102,6 +102,14 @@ namespace ADO_Net_Einführung
             {
                 con.Close();
             }
+
+            DataGridFenster dgf = new DataGridFenster();
+            dgf.ConStr = conStr;
+            dgf.ShowDialog();
+
+
+            string gesuchterName = txbQuery.Text; // DROP Table
+            query = "Select * From Kunden where Name='" + gesuchterName + "'"; // sowas nicht machen!!!
         }
 
         private void WriteLine(string message)

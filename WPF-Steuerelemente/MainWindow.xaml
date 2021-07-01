@@ -64,8 +64,22 @@
             <ComboBoxItem Content="BASIC"></ComboBoxItem>
             <ComboBoxItem>Haskell</ComboBoxItem>
         </ComboBox>
-        <ProgressBar Height="23" Value="10" Name="progressBar" Minimum="0" Maximum="100">
+        <ProgressBar Height="23" Value="10" Name="progressBar" Minimum="0" Maximum="100" Visibility="Hidden">
             
         </ProgressBar>
+        <StackPanel Background="red">
+            <ToggleButton Name="btnToCollapse" Checked="Button_Click" Unchecked="ToggleButton_Unchecked" Content="click to collapse" Visibility="Visible"/>
+            <Button Name="btn2" Click="Button_Click_1" Content="Visible" Visibility="Visible"/>
+            <Button Click="Button_Click_2" Content="Hidden" Visibility="Visible"/>
+            <Button Content="btn 4" Visibility="Visible"/>
+            <Button Name="btn5" Content="btn 5" Visibility="Visible"/>
+            <Button Name="btn6" Content="btn 6" Visibility="Collapsed"/>
+            <Button Content="btn 7" Visibility="Visible" Opacity="0.8"/>
+        </StackPanel>
+        <StackPanel>
+            <Label Name="lbl1" Target="{Binding ElementName=txb1}" Content="Ed_it"></Label>
+            <TextBox Name="txb1"></TextBox>
+        </StackPanel>
+        
     </UniformGrid>
 </Window>

@@ -33,7 +33,7 @@
 
             <Label Content="TwoWay"></Label>
             <Slider Name="TwoWaySource" Minimum="0" Maximum="100" Height="23"></Slider>
-            <Slider Name="TwoWayDest" Minimum="0" Maximum="100" Height="23"
+            <Slider Name="TwoWayDest" Minimum="0" Maximum="300" Height="23"
                     Value="{Binding ElementName=TwoWaySource, Path=Value, Mode=TwoWay}"></Slider>
         </UniformGrid>
         <TextBox Margin="0,5,0,5" Name="txb1"></TextBox>

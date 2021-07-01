@@ -91,5 +91,29 @@ namespace WPF_Steuerelemente
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+                btn5.Visibility = Visibility.Collapsed;
+                btnToCollapse.Content = "click to set visible";
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            btn6.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            btn6.Visibility = Visibility.Hidden;
+        }
+
+        private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            btn5.Visibility = Visibility.Visible;
+            btnToCollapse.Content = "click to collapse";
+        }
     }
+
 }
