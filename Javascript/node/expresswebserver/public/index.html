@@ -7,8 +7,15 @@
     <title>Formular</title>
 </head>
 <body>
-    <form method="GET" action="/submitBenutzername">
+    HTTP-GET: <br>
+    <form method="GET" action="/PostBenutzername">
         Enter Name: <input type="text" name="benutzername" id="txbBenutzername">
+        <input type="submit" value="senden">
+    </form>
+    <br>
+    HTTP-POST: <br>
+    <form action="/PostBenutzername" method="post">
+        Enter Name: <input type="text" name="benutzername" id="txbBenutzername2">
         <input type="submit" value="senden">
     </form>
 </body>
