@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/neuerKd.js"></script>
+    <title>neuer Kunde</title>
+</head>
+<body>
+    <form action="/createCustomer" method="post">
+        Nachname: <input type="text" name="nachname" id="txbnachname"><br/>
+        Vorname:<input type="text" name="vorname" id="txbvorname"><br/>
+        Adresse:<input type="text" name="adresse" id="txbadresse"><br/>
+        Geburtsdatum: <input type="date" name="geburtsdatum" id="datepicker"><br/>
+        <button type="submit">erstellen</button>
+    </form>
+</body>
+</html>
